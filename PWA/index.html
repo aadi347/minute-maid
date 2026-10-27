@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple PWA</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Progressive Web App</h1>
+        <p>Demonstrating Service Worker and Offline Functionality</p>
+
+        <div id="status" class="status-box">Checking connection...</div>
+
+        <div class="content-box">
+            <h2>Offline Note Saver</h2>
+            <input type="text" id="noteInput" placeholder="Enter a note">
+            <button onclick="saveNote()">Save Note</button>
+            <ul id="noteList"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #faf5ef;
+    color: #2b2b2b;
+}
+
+.header {
+    background-color: #581845;
+    color: #fff;
+    padding: 12px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffc300;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #ff5733;
+}
+
+.hero {
+    background-color: #2d6a4f;
+    color: #fff;
+    text-align: center;
+    padding: 42px 16px 36px 16px;
+}
+
+.hero h1 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 34px;
+    color: #ffeaa7;
+    margin-bottom: 8px;
+}
+
+.hero p {
+    font-size: 17px;
+    color: #d8f3dc;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 12px;
+    max-width: 960px;
+    margin: 25px auto 18px auto;
+    gap: 16px;
+}
+
+.card {
+    padding: 18px 14px 22px 14px;
+    border-radius: 8px;
+    flex: 1;
+    box-shadow: 1px 3px 6px rgba(0,0,0,0.12);
+}
+
+.card h2 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 21px;
+    margin-bottom: 11px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #444;
+}
+
+.card-red {
+    background-color: #fff0f0;
+}
+
+.card-red h2 {
+    color: #c70039;
+}
+
+.card-orange {
+    background-color: #fff8f0;
+}
+
+.card-orange h2 {
+    color: #e36414;
+}
+
+.card-purple {
+    background-color: #fcf0ff;
+}
+
+.card-purple h2 {
+    color: #7209b7;
+}
+
+.footer {
+    background-color: #331832;
+    color: #ffc300;
+    text-align: center;
+    padding: 16px;
+    margin-top: 35px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        margin-top: 12px;
+    }
+
+    .nav a {
+        display: inline-block;
+        margin: 4px 8px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px 18px;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+}
